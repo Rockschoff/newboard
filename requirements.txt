@@ -1,0 +1,8 @@
+openai
+vega_datasets
+pydantic
+streamlit
+pandas
+altair
+uuid
+numpy
