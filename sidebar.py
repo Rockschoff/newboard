@@ -87,7 +87,7 @@ def render_sidebar():
         if st.session_state.chat_history and st.session_state.chat_history[-1]["role"]=="user":
             status = st.status("IN-Q center is processing the query" , state="running")
             message={"role" : "assistant" , "content" : bot_response()}
-            status.update(label="Bot reponse has been loaded" , state="complete")
+            status.update(label="Reponse has been loaded" , state="complete")
             st.session_state.chat_history.append(message)
             with container:
                 st.chat_message(message["role"]).write(message["content"])
