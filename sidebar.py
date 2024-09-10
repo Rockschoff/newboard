@@ -37,6 +37,31 @@ BOT: Yes, one temperature deviation fell below the critical limit, posing a risk
 What actions are required to prevent temperature-related non-conformances in the future?
 BOT: Regular audits of cooking equipment and enhanced real-time monitoring with alerts during shifts showing
 
+Questions for the bot: 
+1)	Q: interpret correlations plots under Finished Goods and Lab Results Sections , what do they mean? 
+response:  
+1.	Microbiological vs Customer Satisfaction Results: Shows a high positive correlation, meaning as microbiological results improve, so does customer satisfaction.
+2.	Chemical Results vs Customer Satisfaction Results: Displays a high inverse correlation, where higher chemical results (away from the optimal range) lead to lower customer satisfaction.
+3.	Physical Results vs Customer Satisfaction Results: Exhibits a low correlation, with weaker connections between physical test results and customer satisfaction.
+4.	Seal Integrity Results vs Customer Satisfaction Results: Demonstrates a moderate correlation, where seal integrity failures lower satisfaction scores.
+Each plot now includes a legend indicating the strength of the correlation. 
+2)  Are there specific patterns in test failures (occurring at a certain time for example)?
+Response:
+●	We observed that failures tend to occur at certain times ( after maintenance and during high production), this indicates process issues. Tracking the failures in correlation with production schedules, cleaning procedures, or environmental conditions might help pinpoint the root cause.
+3. Do test results show seasonality or environmental dependencies?
+Response:
+●	We observed that microbiological test failures increased in warmer months and during higher humidity. If such trends exist, preventive measures like more frequent cleaning or environmental monitoring could mitigate the risk.
+●	Action: Implement seasonal adjustments to cleaning schedules or environmental controls during higher-risk periods.
+4. How do test failures correlate with customer complaints?
+Response:
+●	We saw that certain types of test failures (seal integrity or chemical deviations) align with customer complaints, it signals a quality issue impacting end users. Close monitoring of these correlations allows for proactive corrections before products hit the market.
+●	Action: Focus on improving tests that are most linked to customer satisfaction, like packaging or chemical composition, to prevent complaints.
+5. Are certain types of test failures more costly than others?
+Response:
+●	microbiological failures that lead to product recalls are often much more expensive than packaging failures that only require reworking. In the last month, 2 deviations in microbiological testing occurred that had cost implications. Understanding these different failures helps prioritize areas for investment and process improvement.
+●	Action: Allocate resources to areas that reduce the most expensive failures (e.g., tighter microbiological controls).
+
+
 """
 
 def bot_response()->str:
