@@ -2,15 +2,23 @@ import streamlit as st
 def render_process_control():
     with st.expander("Process Control and Monitoring"):
 
-        kpis = [render_cooking]
-        kpi_names = ["Cooking"]
+        kpis = [render_cooking, render_refrigeration , render_labeling , render_fmc]
+        kpi_names = ["Cooking" , "Refrigeration" , "Labeling" , "Foriegn Material Controls"]
         tabs = st.tabs(kpi_names)
 
         for i , tab in enumerate(tabs):
             with tab:
                 kpis[i]()
             
-        
+
+def render_refrigeration():
+    st.subheader("Refrigeration")
+
+def render_labeling():
+    st.subheader("Labeling")
+
+def render_fmc():
+    st.subheader("Foriegn Material Controls")     
        
 
 
