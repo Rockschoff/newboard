@@ -56,5 +56,5 @@ def render_map():
     )
 
     # Render the chart in Streamlit
-    with st.expander("SUMMANRY OF YOUR PLANTS"):
+    with st.expander("SUMMARY OF YOUR PLANTS"):
         st.altair_chart(chart , use_container_width=True)
