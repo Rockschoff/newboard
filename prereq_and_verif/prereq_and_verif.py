@@ -66,9 +66,13 @@ def render_preventive_maintanence():
     
 
 def render_sanitation():
+    def toggle_alerts():
+        st.session_state.show_alerts = not st.session_state.show_alerts
     st.subheader("Sanitation")
-    st.error("3 ATP tests failed, equipment resanitized. Several Listeria spp tests failed, product on hold, investigation ongoing.")
-    st.warning("2 visual inspection test failed, equipment resanitized. Several Coliform tests failed, product on hold")
+    st.button("Alerts" , on_click=toggle_alerts)
+    if st.session_state.show_alerts:
+        st.error("3 ATP tests failed, equipment resanitized. Several Listeria spp tests failed, product on hold, investigation ongoing.")
+        st.warning("2 visual inspection test failed, equipment resanitized. Several Coliform tests failed, product on hold")
     # st.warning("2 visual inspection test failed, equipment resanitized")
     images1 = ["./prereq_and_verif/static/sanitation/visual_inspection.png" , "./prereq_and_verif/static/sanitation/atp_test.png"]
     images2 = ["./prereq_and_verif/static/sanitation/EMP_grouped.png"]

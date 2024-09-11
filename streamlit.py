@@ -11,6 +11,9 @@ from sidebar import render_sidebar
 if "chat_history" not in st.session_state:
     st.session_state.chat_history=[]
 
+if "show_alerts" not in st.session_state:
+    st.session_state.show_alerts=False
+
 st.set_page_config(layout='wide')
 render_sidebar()
 render_map()
