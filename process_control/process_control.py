@@ -24,7 +24,7 @@ def render_fmc():
 
 def render_cooking():
 
-    st.subheader("Continuos Cooking Temp")
+    st.subheader("Continuous Cooking Temp")
 
     cols = st.columns([1 , 1 ,1])
     images = ["./process_control/static/temp_line1.png" , "./process_control/static/temp_line2.png" , "./process_control/static/temp_line1.png"]
