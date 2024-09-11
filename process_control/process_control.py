@@ -3,7 +3,7 @@ def render_process_control():
     with st.expander("Process Control and Monitoring"):
 
         kpis = [render_cooking, render_refrigeration , render_labeling , render_fmc]
-        kpi_names = ["Cooking" , "Refrigeration" , "Labeling" , "Foriegn Material Controls"]
+        kpi_names = ["Cooking" , "Refrigeration" , "Labeling" , "Foreign Material Controls"]
         tabs = st.tabs(kpi_names)
 
         for i , tab in enumerate(tabs):
@@ -18,7 +18,7 @@ def render_labeling():
     st.subheader("Labeling")
 
 def render_fmc():
-    st.subheader("Foriegn Material Controls")     
+    st.subheader("Foreign Material Controls")     
        
 
 
