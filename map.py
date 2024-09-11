@@ -33,7 +33,7 @@ def render_map():
     color_condition = alt.condition(
         selection,
         alt.Color('current_score:Q',
-                scale=alt.Scale(domain=[93, 96], range=['red', 'orange', 'green']),
+                scale=alt.Scale(domain=[93, 96], range=['red', 'yellow', 'green']),
                 legend=None), 
         alt.value('gray')  # Color for non-selected points
     )
