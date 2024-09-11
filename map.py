@@ -51,7 +51,7 @@ def render_map():
     # Combine base map and points
     chart = (base + points).properties(
         title='Your Plants',
-        background='#0E1117',  # Dark background for the chart
+        background="white",  # Dark background for the chart
         padding={'left': 20, 'right': 20, 'top': 20, 'bottom': 20}
     )
 
