@@ -12,15 +12,15 @@ def render_map():
         'latitude': np.random.uniform(30, 48, 5),  # Latitude range for USA
         'longitude': np.random.uniform(-125, -70, 5),  # Longitude range for USA
         'past_score': np.random.randint(90, 100, 5),
-        'current_score': [99, 97 , 95 , 92 , 87],
-        'future_score': np.random.randint(90, 100, 5)  # Random past scores between 85 and 100
+        'current_score': [99, 97 , 95 , 89 , 84],
+        'future_score': [97 , 98 , 96 , 88 , 80]  # Random past scores between 85 and 100
     })
 
     # Manually categorize the current scores into colors
     def score_to_color(score):
-        if score >= 95:
+        if score >= 90:
             return 'green'
-        elif score >= 90:
+        elif score >= 85:
             return 'yellow'
         else:
             return 'red'
