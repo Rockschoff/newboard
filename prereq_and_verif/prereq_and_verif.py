@@ -68,7 +68,8 @@ def render_preventive_maintanence():
 def render_sanitation():
     st.subheader("Sanitation")
     st.error("3 ATP tests failed, equipment resanitized.")
-    st.warning("2 visual inspection test failed, equipment resanitized")
+    st.warning("2 visual inspection test failed, equipment resanitized.\n Several Coliform test failed, product on hold")
+    # st.warning("2 visual inspection test failed, equipment resanitized")
     images1 = ["./prereq_and_verif/static/sanitation/visual_inspection.png" , "./prereq_and_verif/static/sanitation/atp_test.png"]
     images2 = ["./prereq_and_verif/static/sanitation/EMP_grouped.png"]
     images3=["./prereq_and_verif/static/sanitation/grouped_details.png"]
