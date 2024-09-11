@@ -1,5 +1,6 @@
 import streamlit as st
 import time
+import re
 from openai import OpenAI
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
@@ -64,6 +65,11 @@ Response:
 
 """
 
+def remove_citations(text):
+    # Use regular expression to remove content inside 【】 along with the brackets
+    result = re.sub(r'【.*?】', '', text)
+    return result.strip()
+
 def bot_response()->str:
 
     # self.system_message= self.system_message+ f"{st.session_state.app.generate_app_state()}" + """ Please make good use of this infomration to answer the user queries"""
@@ -90,7 +96,8 @@ def bot_response()->str:
     run = wait_on_run(run)
     messages = client.beta.threads.messages.list(thread_id=run.thread_id)
     # print(messages.data[0])
-    return messages.data[0].content[0].text.value
+    ans = remove_citations(messages.data[0].content[0].text.value)
+    return ans
 
 def render_sidebar():
     with st.sidebar:
