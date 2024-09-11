@@ -2,10 +2,10 @@ import streamlit as st
 from uuid import uuid4
 def render_preq_and_verif():
 
-    with st.expander("Prequisite and Verification Programs"):
+    with st.expander("Prerequisite and Verification Programs"):
 
-        kpis = [ render_training , render_internal_audits , render_preventive_maintanence ,  render_sanitation, render_lab_results]
-        kpi_names = [ 'Training' , "Internal Audits" , "Preventive Maintainence" , "Sanitation", "Finished Goods and Lab Results"]
+        kpis = [   render_sanitation, render_lab_results, render_preventive_maintanence,render_internal_audits ,render_training]
+        kpi_names = [   "Sanitation", "Finished Goods and Lab Results","Preventive Maintainence", "Internal Audits", 'Training' ]
 
         tabs = st.tabs(kpi_names)
         for i , tab in enumerate(tabs):
