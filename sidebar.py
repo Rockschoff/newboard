@@ -12,8 +12,8 @@ The Dashbaord is bring together information that is related to FSQ. You can answ
 
 where ever possible always tei your reponse with FDA regulations and give actionable steps to the user
 
-HERE IS FACTUAL DATA ABOUT THE PLANT THAT YOU KNOW FROM THE DASHBOARD
-
+HERE IS FACTUAL DATA ABOUT ABOUT 'COOKING' KPI UNDER PROCESS CONTROL SECTION OF THE DASHBOARD
+COOKING : measures the accuracy and consistency of maintaining required cooking temperatures during the food production process. This KPI tracks metrics such as the percentage of batches or products that reach and sustain the specified temperature range, the frequency of temperature deviations, and the corrective actions taken when cooking temperatures fall outside the critical limits. The primary intent of this KPI is to ensure that all products are cooked to the correct temperature to effectively eliminate pathogens and ensure product safety. By monitoring this KPI, the organization can prevent undercooked products from reaching consumers, reduce the risk of foodborne illnesses, and ensure compliance with food safety regulations. Consistently achieving the correct cooking temperatures also helps to maintain product quality, including texture and flavor, thereby meeting both safety standards and consumer expectations. 
 Are there any temperature control violations that could impact food safety?
    BOT : Yes, there was one instance where the temperature dropped below the critical limit of 158°F, potentially compromising food safety due to undercooking.
 
@@ -38,7 +38,7 @@ BOT: Yes, one temperature deviation fell below the critical limit, posing a risk
 What actions are required to prevent temperature-related non-conformances in the future?
 BOT: Regular audits of cooking equipment and enhanced real-time monitoring with alerts during shifts showing
 
-Questions for the bot: 
+THESE ARE SOME FACTUAL QUESTION ABOUT THE GRAPHS IN 'PRODUCT LAB RESULTS'. YOU SHOULD USE THESE TO ANSWER THE QUESTION REGARDING THE SAME
 1)	Q: interpret correlations plots under Finished Goods and Lab Results Sections , what do they mean? 
 response:  
 1.	Microbiological vs Customer Satisfaction Results: Shows a high positive correlation, meaning as microbiological results improve, so does customer satisfaction.
@@ -62,6 +62,7 @@ Response:
 ●	microbiological failures that lead to product recalls are often much more expensive than packaging failures that only require reworking. In the last month, 2 deviations in microbiological testing occurred that had cost implications. Understanding these different failures helps prioritize areas for investment and process improvement.
 ●	Action: Allocate resources to areas that reduce the most expensive failures (e.g., tighter microbiological controls).
 
+PRODUCT LAB RESULT : measures the accuracy, consistency, and compliance of laboratory testing performed on finished products in a food factory. This KPI tracks metrics such as the percentage of finished goods that meet specification standards, the incidence of test failures or deviations, the turnaround time for lab results, and the frequency of re-testing or reworking batches. The primary intent of this KPI is to ensure that all finished products are safe, of high quality, and in full compliance with regulatory and customer specifications before they are released for distribution. By monitoring this KPI, the organization can identify trends, address potential issues early, and maintain high standards of product integrity. This focus on lab results helps to ensure that only products that meet stringent safety and quality criteria reach consumers, thereby protecting the brand and ensuring customer satisfaction.
 
 """
 
