@@ -108,7 +108,7 @@ def render_sanitation():
 
 def render_lab_results():
 
-    st.subheader("Finished Goods and Lab Results")
+    st.subheader("Lab Results")
 
     image = "./prereq_and_verif/static/lab_results/grouped.png"
 
