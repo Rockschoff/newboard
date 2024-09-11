@@ -5,7 +5,7 @@ def render_preq_and_verif():
     with st.expander("Prerequisite and Verification Programs"):
 
         kpis = [   render_sanitation, render_lab_results, render_preventive_maintanence,render_internal_audits ,render_training]
-        kpi_names = [   "Sanitation", "Finished Goods and Lab Results","Preventive Maintainence", "Internal Audits", 'Training' ]
+        kpi_names = [   "Sanitation", "Finished Goods and Lab Results","Preventive Maintenance", "Internal Audits", 'Training' ]
 
         tabs = st.tabs(kpi_names)
         for i , tab in enumerate(tabs):
@@ -33,7 +33,7 @@ def render_internal_audits():
 
 
 def render_preventive_maintanence():
-    st.subheader('Preventive Maintanence')
+    st.subheader('Preventive Maintenance')
 
     images = ["./prereq_and_verif/static/preventive_maintanence/equipment_pass_rate.png" ,
               "./prereq_and_verif/static/preventive_maintanence/general_efficiency.png" ,
