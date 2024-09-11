@@ -108,7 +108,7 @@ def render_sanitation():
 
 def render_lab_results():
 
-    st.subheader("Lab Results")
+    st.subheader("Product Lab Results")
 
     image = "./prereq_and_verif/static/lab_results/grouped.png"
 
@@ -134,3 +134,7 @@ def render_lab_results():
             with corr_tab :
                 st.image(corr_images[i])
 
+
+"""
+【something】
+"""
