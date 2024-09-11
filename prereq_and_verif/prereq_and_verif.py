@@ -67,6 +67,8 @@ def render_preventive_maintanence():
 
 def render_sanitation():
     st.subheader("Sanitation")
+    st.error("Critical Error Demo")
+    st.warning("Not So Critical Error Demo")
     images1 = ["./prereq_and_verif/static/sanitation/visual_inspection.png" , "./prereq_and_verif/static/sanitation/atp_test.png"]
     images2 = ["./prereq_and_verif/static/sanitation/EMP_grouped.png"]
     images3=["./prereq_and_verif/static/sanitation/grouped_details.png"]
