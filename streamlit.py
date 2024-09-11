@@ -3,6 +3,7 @@ from process_control.process_control import render_process_control
 from prereq_and_verif.prereq_and_verif import render_preq_and_verif
 from supplier_management.supplier_management import render_supplier_management
 from CAPA.CAPA import render_CAPA
+from recall_preparedness.recall_preparedness import render_recall_preparedness
 from map import render_map
 
 from sidebar import render_sidebar
@@ -17,5 +18,6 @@ render_preq_and_verif()
 render_process_control()
 render_supplier_management()
 render_CAPA()
+render_recall_preparedness()
 
 
