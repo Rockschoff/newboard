@@ -5,7 +5,7 @@ def render_preq_and_verif():
     with st.expander("Prerequisite and Verification Programs"):
 
         kpis = [   render_sanitation, render_lab_results, render_preventive_maintanence,render_internal_audits ,render_training]
-        kpi_names = [   "Sanitation", "Finished Goods and Lab Results","Preventive Maintenance", "Internal Audits", 'Training' ]
+        kpi_names = [   "Sanitation", "Product Lab Results","Preventive Maintenance", "Internal Audits", 'Training' ]
 
         tabs = st.tabs(kpi_names)
         for i , tab in enumerate(tabs):
