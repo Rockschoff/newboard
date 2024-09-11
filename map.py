@@ -24,8 +24,8 @@ def render_map():
 
     # Create base map with darker colors
     base = alt.Chart(states).mark_geoshape(
-        fill='black',  # Dark fill for map
-        stroke='gray'  # Light gray for state borders
+        fill='white',  # Dark fill for map
+        stroke='black'  # Light gray for state borders
     ).project('albersUsa').properties(
     )
 
