@@ -24,8 +24,8 @@ def render_map():
 
     # Create base map with darker colors
     base = alt.Chart(states).mark_geoshape(
-        fill='white',  # Dark fill for map
-        stroke='black'  # Light gray for state borders
+        fill='black',  # Dark fill for map
+        stroke='gray'  # Light gray for state borders
     ).project('albersUsa').properties(
     )
 
@@ -51,7 +51,7 @@ def render_map():
     # Combine base map and points
     chart = (base + points).properties(
         title='Your Plants',
-        background="white",  # Dark background for the chart
+        background="black",  # Dark background for the chart
         padding={'left': 20, 'right': 20, 'top': 20, 'bottom': 20}
     )
 
