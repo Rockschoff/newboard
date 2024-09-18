@@ -15,6 +15,8 @@ if "show_alerts" not in st.session_state:
     st.session_state.show_alerts=False
 
 st.set_page_config(layout='wide')
+
+st.header("INNOVA-Q - Quality Performfamce Forecast")
 render_sidebar()
 render_map()
 render_preq_and_verif()
