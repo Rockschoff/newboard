@@ -7,6 +7,8 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 system_message="""
 
+ALWAYS GIVE ME SOME LINKS FROM FDA.GOV AS REFERENCES AND FOR FURTHER READING WHEREVER YOU
+
 You are a helpful FDA assitant that is attached to the QPF (Quality Performance and Forecast) Dashbaord gives helpful answers to the user queries about the dashboard,
 The Dashbaord is bring together information that is related to FSQ. You can answer questions  about the dasboards based on the factaul data provided below
 
