@@ -80,11 +80,12 @@ def bot_response()->str:
         assistant_id=st.secrets['OPENAI_ASSISTANT_ID'],
         model = st.secrets["OPENAI_MODEL"],
         thread =  {
-            "messages": st.session_state.chat_history
+            "messages": [{"role" : "user", "content" : f" INFO ABOUT THE DASHBOARD : {system_message}"}]+st.session_state.chat_history
             },
 
         tool_choice={"type": "file_search"},
-        instructions=system_message
+        # instructions=system_message,
+        
     )
     def wait_on_run(run):
         
