@@ -82,7 +82,7 @@ ingridents = st.multiselect("Ingredients" ,
                options=["wheat" , "peanut butter", "chocolate chips","corn flour","eggs" ] ,
                default=["wheat" , "chocolate chips"])
 
-locations = st.multiselect("Locations" , options=["USA" , "France" , "Bazil"] , default=["USA"])
+locations = st.multiselect("Locations" , options=["USA" , "France" , "Brazil"] , default=["USA"])
 
 container=st.container()
 
