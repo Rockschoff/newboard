@@ -6,3 +6,4 @@ pandas
 altair
 uuid
 numpy
+tavily-python
